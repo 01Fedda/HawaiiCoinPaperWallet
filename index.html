@@ -9393,9 +9393,12 @@ select::-ms-expand {
     </div>
     <div id="wallets">
       <div id="singlearea" class="walletarea" style="color:black">
-        <div id="initBanner"> <span id="generatelabelhwiaddress" class="i18n">Generating new Address...</span><br /> <span id="generatelabelmovemouse" class="i18n">MOVE your mouse around to add some extra randomness... </span><span id="mousemovelimit"></span><br />
+        <!--<div id="initBanner"> <span id="generatelabelhwiaddress" class="i18n">Generating new Address...</span><br /> <span id="generatelabelmovemouse" class="i18n">MOVE your mouse around to add some extra randomness... </span><span id="mousemovelimit"></span><br />
           <span
-            id="generatelabelkeypress" class="i18n">OR type some random characters into this textbox</span> <input type="text" id="generatekeyinput" onkeypress="ninja.seeder.seedKeyPress(event);" /><br />
+            id="generatelabelkeypress" class="i18n">OR type some random characters into this textbox</span> <input type="text" id="generatekeyinput" onkeypress="ninja.seeder.seedKeyPress(event);" /><br />-->
+			<div id="initBanner"> <span id="generatelabelhwiaddress" class="i18n">Generating new Address...</span><br /> <span id="generatelabelmovemouse" class="i18n">For PC, MOVE your mouse around,<br />Or for Mobile, continually TOUCH your screen to add some extra randomness... </span><span id="mousemovelimit"></span><br />
+          <span
+            id="generatelabelkeypress" class="i18n"><!--Or for Mobile, continually TOUCH your screen. OR type some random characters into this textbox--></span> <span id="generatekeyinput" onkeypress="ninja.seeder.seedKeyPress(event);"></span><!--<br />-->
             <div id="seedpooldisplay"></div>
             <div id="rightArea">
               <div id="progress-bar" class="fullyRounded">
